@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Present Simple Lesson</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ------------------------
+       PRESENT SIMPLE SLIDER
+    ------------------------ */
+    .present-simple-page {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      background: #111; /* fallback */
+    }
+
+    .present-simple-slider {
+      flex: 1;
+      overflow-y: auto;
+      scroll-snap-type: y mandatory;
+      -webkit-overflow-scrolling: touch;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+    }
+
+    .slide {
+      position: relative;
+      width: 100%;
+      height: 100vh; /* full viewport height */
+      scroll-snap-align: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    /* ------------------------
+       BACK BUTTON (5th slide)
+    ------------------------ */
+    .back-btn {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      padding: 5px 12px;
+      font-size: 12px;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      z-index: 10;
+    }
+
+    .back-btn:hover {
+      background: rgba(0,0,0,0.8);
+    }
+  </style>
+</head>
+<body class="present-simple-page">
+
+  <div class="present-simple-slider">
+    <div class="slide">
+      <img src="images/presentsimple1.jpg" alt="Present Simple Page 1">
+    </div>
+    <div class="slide">
+      <img src="images/presentsimple2.jpg" alt="Present Simple Page 2">
+    </div>
+    <div class="slide">
+      <img src="images/presentsimple3.jpg" alt="Present Simple Page 3">
+    </div>
+    <div class="slide">
+      <img src="images/presentsimple4.jpg" alt="Present Simple Page 4">
+    </div>
+    <div class="slide">
+      <img src="images/presentsimple5.jpg" alt="Present Simple Page 5">
+      <!-- Only the 5th slide has the Back button -->
+      <a href="beginner.html" class="back-btn" id="back-btn">Back</a>
+    </div>
+  </div>
+
+</body>
+</html>

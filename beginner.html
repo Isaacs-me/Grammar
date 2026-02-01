@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* PDF Images */
+    .pdf-images img {
+      display: block;
+      width: 100%;        /* full width of container */
+      margin-bottom: 20px; /* spacing between pages */
+      border-radius: 8px;  /* optional rounded corners */
+    }
+
+    /* Back button */
+    .back-button {
+      display: inline-block;
+      margin: 20px 0;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+
+    .back-button:hover {
+      background-color: #45a049;
+    }
+
+    .grammar-explanation {
+      max-width: 900px;   /* optional: center content */
+      margin: 0 auto;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body class="lessons-page">
+
+  <!-- LEFT NAV -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="lessons.html">Lessons</a>
+    <a href="quiz.html">Quiz</a>
+    <a href="about.html">About</a>
+  </nav>
+
+  <!-- BEGINNER LESSONS CONTENT -->
+  <div class="lessons-wrapper beginner-page">
+   
+    <div class="beginner-inner">
+      <a href="presentsimple.html" class="inner-card">
+        <img src="images/presentsimple.jpg" alt="Present Simple">
+        <span>Present Simple</span>
+      </a>
+      <div class="inner-card">
+        <img src="images/presentcontinuous.jpg" alt="Present Continuous">
+        <span>Present Continuous</span>
+      </div>
+      <div class="inner-card">
+        <img src="images/pronouns.jpg" alt="Pronouns">
+        <span>Pronouns</span>
+      </div>
+      <div class="inner-card">
+        <img src="images/verbtobe.jpg" alt="Verb To Be">
+        <span>Verb To Be</span>
+      </div>
+      <div class="inner-card">
+        <img src="images/grammarbasics.jpg" alt="Grammar Basics">
+        <span>Grammar Basics</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PDF IMAGES EMBEDDED AS JPG -->
+  <section class="grammar-explanation">
+    <h1>Present Simple PDF</h1>
+
+    <div class="pdf-images">
+      <img src="images/present_simple_page1.jpg" alt="Present Simple Page 1">
+      <img src="images/present_simple_page2.jpg" alt="Present Simple Page 2">
+      <img src="images/present_simple_page3.jpg" alt="Present Simple Page 3">
+      <img src="images/present_simple_page4.jpg" alt="Present Simple Page 4">
+      <img src="images/present_simple_page5.jpg" alt="Present Simple Page 5">
+    </div>
+
+    <a href="beginner.html" class="back-button">Back to Beginner</a>
+  </section>
+
+</body>
+</html>
+
+
+
+
+
