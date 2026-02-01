@@ -9,7 +9,7 @@
 body {
   font-family: Arial, sans-serif;
   height: 100vh;
-  background-image: url("images/background.jpg");
+  background-image: url("background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -17,7 +17,7 @@ body {
 
 /* About page background */
 body.about-page {
-  background-image: url("images/about-background.jpg");
+  background-image: url("about-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -25,7 +25,7 @@ body.about-page {
 
 /* Lessons page background */
 body.lessons-page {
-  background-image: url("images/lessons-background.jpg");
+  background-image: url("lessons-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -33,7 +33,7 @@ body.lessons-page {
 
 /* Quiz page background */
 body.quiz-page {
-  background-image: url("images/quiz-background.jpg");
+  background-image: url("quiz-background.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -208,12 +208,12 @@ button:hover {
   padding-bottom: 5px;
 }
 
-.lesson-card.beginner { background-image: url("images/beginner.jpg"); }
-.lesson-card.elementary { background-image: url("images/elementary.jpg"); }
-.lesson-card.pre-intermediate { background-image: url("images/pre-intermediate.jpg"); }
-.lesson-card.intermediate { background-image: url("images/intermediate.jpg"); }
-.lesson-card.upper-intermediate { background-image: url("images/upper-intermediate.jpg"); }
-.lesson-card.advanced { background-image: url("images/advanced.jpg"); }
+.lesson-card.beginner { background-image: url("beginner.jpg"); }
+.lesson-card.elementary { background-image: url("elementary.jpg"); }
+.lesson-card.pre-intermediate { background-image: url("pre-intermediate.jpg"); }
+.lesson-card.intermediate { background-image: url("intermediate.jpg"); }
+.lesson-card.upper-intermediate { background-image: url("upper-intermediate.jpg"); }
+.lesson-card.advanced { background-image: url("advanced.jpg"); }
 
 .bottom-menu {
   display: flex;
@@ -354,4 +354,5 @@ button:hover {
 .back-btn:hover {
   background: rgba(0,0,0,0.8);
 }
+
 
