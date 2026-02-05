@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Be Lesson</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ------------------------
+       TO BE SLIDER
+    ------------------------ */
+    .to-be-page {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      background: #111;
+    }
+
+    .to-be-slider {
+      flex: 1;
+      overflow-y: auto;
+      scroll-snap-type: y mandatory;
+      -webkit-overflow-scrolling: touch;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+    }
+
+    .to-be-slider .slide {
+      position: relative;
+      width: 100%;
+      height: 100vh; 
+      scroll-snap-align: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .to-be-slider .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none; /* FIX: allow clicks to pass through */
+    }
+
+    /* ------------------------
+       BACK BUTTON (4th slide)
+    ------------------------ */
+    .to-be-slider .back-btn {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      padding: 5px 12px;
+      font-size: 12px;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      z-index: 10;
+    }
+
+    .to-be-slider .back-btn:hover {
+      background: rgba(0,0,0,0.8);
+    }
+  </style>
+</head>
+<body class="to-be-page">
+
+  <div class="to-be-slider">
+    <div class="slide">
+      <img src="images/tobe1.jpg" alt="To Be Slide 1 - Definition">
+    </div>
+    <div class="slide">
+      <img src="images/tobe2.jpg" alt="To Be Slide 2 - Forms">
+    </div>
+    <div class="slide">
+      <img src="images/tobe3.jpg" alt="To Be Slide 3 - Identity & State Examples">
+    </div>
+    <div class="slide">
+      <img src="images/tobe4.jpg" alt="To Be Slide 4 - Verb-ing / Continuous Examples">
+      <!-- Back button -->
+      <a href="beginner.html" class="back-btn" id="back-btn">Back</a>
+    </div>
+  </div>
+
+</body>
+</html>
+
