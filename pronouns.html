@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pronouns Lesson</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ------------------------
+       PRONOUNS SLIDER
+    ------------------------ */
+    .pronouns-page {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      background: #111;
+    }
+
+    .pronouns-slider {
+      flex: 1;
+      overflow-y: auto;
+      scroll-snap-type: y mandatory;
+      -webkit-overflow-scrolling: touch;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+    }
+
+    .pronouns-slider .slide {
+      position: relative;
+      width: 100%;
+      height: 100vh; 
+      scroll-snap-align: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .pronouns-slider .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    /* BACK BUTTON (last slide) */
+    .pronouns-slider .back-btn {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      padding: 5px 12px;
+      font-size: 12px;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      z-index: 10;
+    }
+
+    .pronouns-slider .back-btn:hover {
+      background: rgba(0,0,0,0.8);
+    }
+  </style>
+</head>
+<body class="pronouns-page">
+
+  <div class="pronouns-slider">
+    <div class="slide">
+      <img src="images/pronouns1.jpg" alt="Pronouns Slide 1 - Subject Pronouns">
+    </div>
+    <div class="slide">
+      <img src="images/pronouns2.jpg" alt="Pronouns Slide 2 - Object Pronouns">
+    </div>
+    <div class="slide">
+      <img src="images/pronouns3.jpg" alt="Pronouns Slide 3 - Possessive Adjectives">
+    </div>
+    <div class="slide">
+      <img src="images/pronouns4.jpg" alt="Pronouns Slide 4 - Possessive Pronouns">
+    </div>
+    <div class="slide">
+      <img src="images/pronouns5.jpg" alt="Pronouns Slide 5 - More Explanation">
+    </div>
+    <div class="slide">
+      <img src="images/pronouns6.jpg" alt="Pronouns Slide 6 - Summary">
+      <a href="beginner.html" class="back-btn">Back</a>
+    </div>
+  </div>
+
+</body>
+</html>
