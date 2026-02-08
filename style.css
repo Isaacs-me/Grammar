@@ -486,6 +486,101 @@ button:hover {
 .to-be-slider .back-btn:hover {
   background: rgba(0,0,0,0.8);
 }
+/* =========================
+   LESSON CARD ANIMATION
+========================= */
+
+.lesson-card {
+  background: linear-gradient(145deg, #0f172a, #020617);
+  border-radius: 24px;
+  padding: 20px; /* reduce padding for bottom space */
+  box-shadow: 0 25px 70px rgba(0,0,0,0.6), inset 0 0 0 1px rgba(255,255,255,0.04);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* ensures content stays at bottom */
+  min-height: 220px;
+  cursor: pointer;
+  opacity: 0;
+  transform: translateY(60px) scale(0.95) rotateX(6deg);
+  transition: opacity 0.8s ease, transform 0.9s cubic-bezier(.16,.84,.44,1);
+}
+
+.lesson-card.show {
+  opacity: 1;
+  transform: translateY(0) scale(1) rotateX(0);
+}
+
+/* TOP LABEL (A1, A2, B1...) */
+.lesson-card h2 {
+  font-size: 16px;       /* smaller than before */
+  font-weight: 600;
+  margin: 0;
+  color: #00c896;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease 0.3s;
+}
+
+/* LEVEL NAME (Beginner, Elementary...) */
+.lesson-card .level {
+  font-size: 14px;       /* slightly smaller */
+  font-weight: 500;
+  color: #fff;
+  margin: 2px 0 0 0;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease 0.4s;
+}
+
+/* DESCRIPTION TEXT */
+.lesson-card .description {
+  font-size: 12px;       
+  color: #ccc;
+  margin: 0;             
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease 0.5s;
+}
+.lesson-card.show h2,
+.lesson-card.show .level,
+.lesson-card.show .description {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* =========================
+   VOCABULARY CARD ANIMATION
+========================= */
+.card {
+  opacity: 0;
+  transform: translateY(60px) scale(0.95) rotateX(6deg);
+  transition: opacity 0.8s ease, transform 0.9s cubic-bezier(.16,.84,.44,1);
+}
+
+.card.show {
+  opacity: 1;
+  transform: translateY(0) scale(1) rotateX(0);
+}
+
+.card span {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+  padding: 10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  background: rgba(0,0,0,0.35);
+  text-align: center;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.6s ease 0.2s;
+}
+
+.card.show span {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
 
 
