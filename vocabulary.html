@@ -80,9 +80,34 @@
 
     </div>
   </div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const vocabCards = document.querySelectorAll('.card');
 
+  function isInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return rect.top < window.innerHeight && rect.bottom > 0;
+  }
+
+  function animateCards() {
+    vocabCards.forEach((card, index) => {
+      if (isInViewport(card)) {
+        if (!card.classList.contains('show')) {
+          setTimeout(() => {
+            card.classList.add('show');
+          }, index * 100); // stagger effect
+        }
+      }
+    });
+  }
+
+  animateCards(); // check on load
+  window.addEventListener('scroll', animateCards); // check on scroll
+});
+</script>
 </body>
 </html>
+
 
 
 
