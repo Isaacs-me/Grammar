@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Past Continuous Lesson</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ------------------------
+       PAST CONTINUOUS SLIDER
+    ------------------------ */
+    .pc-page {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      background: #111;
+    }
+
+    .pc-slider {
+      flex: 1;
+      overflow-y: auto;
+      scroll-snap-type: y mandatory;
+      -webkit-overflow-scrolling: touch;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+    }
+
+    .pc-slider .slide {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      scroll-snap-align: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .pc-slider .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    /* BACK BUTTON (last slide only) */
+    .pc-slider .back-btn {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      padding: 5px 12px;
+      font-size: 12px;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      z-index: 10;
+    }
+
+    .pc-slider .back-btn:hover {
+      background: rgba(0,0,0,0.8);
+    }
+  </style>
+</head>
+
+<body class="pc-page">
+
+  <div class="pc-slider">
+
+    <div class="slide">
+      <img src="images/pastc1.jpg" alt="Past Continuous - Slide 1">
+    </div>
+
+    <div class="slide">
+      <img src="images/pastc2.jpg" alt="Past Continuous - Slide 2">
+    </div>
+
+    <div class="slide">
+      <img src="images/pastc3.jpg" alt="Past Continuous - Slide 3">
+    </div>
+
+    <div class="slide">
+      <img src="images/pastc4.jpg" alt="Past Continuous - Slide 4">
+    </div>
+
+    <div class="slide">
+      <img src="images/pastc5.jpg" alt="Past Continuous - Slide 5">
+      <a href="elementary.html" class="back-btn">Back</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
