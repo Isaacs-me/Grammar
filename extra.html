@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Extra Grammar Lesson</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ------------------------
+       EXTRA GRAMMAR SLIDER
+    ------------------------ */
+    .ex-page {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: #111;
+    }
+
+    .ex-slider {
+      flex: 1;
+      overflow-y: auto;
+      scroll-snap-type: y mandatory;
+      -webkit-overflow-scrolling: touch;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ex-slider .slide {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      scroll-snap-align: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ex-slider .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    /* BACK BUTTON (last slide only) */
+    .ex-slider .back-btn {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      padding: 5px 12px;
+      font-size: 12px;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .ex-slider .back-btn:hover {
+      background: rgba(0,0,0,0.8);
+    }
+  </style>
+</head>
+
+<body class="ex-page">
+
+  <div class="ex-slider">
+
+    <div class="slide">
+      <img src="images/extra1.jpg" alt="Extra Lesson - Slide 1">
+    </div>
+
+    <div class="slide">
+      <img src="images/extra2.jpg" alt="Extra Lesson - Slide 2">
+    </div>
+
+    <div class="slide">
+      <img src="images/extra3.jpg" alt="Extra Lesson - Slide 3">
+    </div>
+
+    <div class="slide">
+      <img src="images/extra4.jpg" alt="Extra Lesson - Slide 4">
+    </div>
+
+    <div class="slide">
+      <img src="images/extra5.jpg" alt="Extra Lesson - Slide 5">
+    </div>
+
+    <div class="slide">
+      <img src="images/extra6.jpg" alt="Extra Lesson - Slide 6">
+    </div>
+
+    <div class="slide">
+      <img src="images/extra7.jpg" alt="Extra Lesson - Slide 7">
+    </div>
+
+    <div class="slide">
+      <img src="images/extra8.jpg" alt="Extra Lesson - Slide 8">
+    </div>
+
+    <div class="slide">
+      <img src="images/extra9.jpg" alt="Extra Lesson - Slide 9">
+    </div>
+
+    <div class="slide">
+      <img src="images/extra10.jpg" alt="Extra Lesson - Slide 10">
+    </div>
+
+    <div class="slide">
+      <img src="images/extra11.jpg" alt="Extra Lesson - Slide 11">
+    </div>
+
+    <div class="slide">
+      <img src="images/extra12.jpg" alt="Extra Lesson - Slide 12">
+    </div>
+
+    <div class="slide">
+      <img src="images/extra13.jpg" alt="Extra Lesson - Slide 13">
+      <a href="elementary.html" class="back-btn">Back</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
