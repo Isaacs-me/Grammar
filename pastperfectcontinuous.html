@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Past Perfect Continuous Lesson</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ------------------------
+       PAST PERFECT CONTINUOUS SLIDER
+    ------------------------ */
+    .ps-page {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      background: #111;
+    }
+
+    .ps-slider {
+      flex: 1;
+      overflow-y: auto;
+      scroll-snap-type: y mandatory;
+      -webkit-overflow-scrolling: touch;
+      display: flex;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+    }
+
+    .ps-slider .slide {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      scroll-snap-align: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ps-slider .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    /* BACK BUTTON (last slide) */
+    .ps-slider .back-btn {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      padding: 5px 12px;
+      font-size: 12px;
+      background: rgba(0,0,0,0.6);
+      color: white;
+      text-decoration: none;
+      border-radius: 4px;
+      z-index: 10;
+    }
+
+    .ps-slider .back-btn:hover {
+      background: rgba(0,0,0,0.8);
+    }
+  </style>
+</head>
+
+<body class="ps-page">
+
+  <div class="ps-slider">
+    <div class="slide">
+      <img src="images/pastpcontinuous1.jpg" alt="Past Perfect Continuous - Slide 1">
+    </div>
+
+    <div class="slide">
+      <img src="images/pastpcontinuous2.jpg" alt="Past Perfect Continuous - Slide 2">
+    </div>
+
+    <div class="slide">
+      <img src="images/pastpcontinuous3.jpg" alt="Past Perfect Continuous - Slide 3">
+    </div>
+
+    <div class="slide">
+      <img src="images/pastpcontinuous4.jpg" alt="Past Perfect Continuous - Slide 4">
+    </div>
+
+    <div class="slide">
+      <img src="images/pastpcontinuous5.jpg" alt="Past Perfect Continuous - Slide 5">
+    </div>
+
+    <div class="slide">
+      <img src="images/pastpcontinuous6.jpg" alt="Past Perfect Continuous - Slide 6">
+    </div>
+
+    <div class="slide">
+      <img src="images/pastpcontinuous7.jpg" alt="Past Perfect Continuous - Slide 7">
+      <a href="pre-intermediate.html" class="back-btn">Back</a>
+    </div>
+  </div>
+
+</body>
+</html>
