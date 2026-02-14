@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modal Verbs B1 Lesson</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ------------------------
+      MODAL VERBS B1 SLIDER
+    ------------------------ */
+    .ex-page {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: #111;
+    }
+
+    .ex-slider {
+      flex: 1;
+      overflow-y: auto;
+      scroll-snap-type: y mandatory;
+      -webkit-overflow-scrolling: touch;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ex-slider .slide {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      scroll-snap-align: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ex-slider .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    .ex-slider .back-btn {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      padding: 5px 12px;
+      font-size: 12px;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .ex-slider .back-btn:hover {
+      background: rgba(0,0,0,0.8);
+    }
+  </style>
+</head>
+
+<body class="ex-page">
+
+  <div class="ex-slider">
+
+    <div class="slide">
+      <img src="images/mverbs1.jpg" alt="Modal Verbs B1 - Slide 1">
+    </div>
+
+    <div class="slide">
+      <img src="images/mverbs2.jpg" alt="Modal Verbs B1 - Slide 2">
+    </div>
+
+    <div class="slide">
+      <img src="images/mverbs3.jpg" alt="Modal Verbs B1 - Slide 3">
+    </div>
+
+    <div class="slide">
+      <img src="images/mverbs4.jpg" alt="Modal Verbs B1 - Slide 4">
+    </div>
+
+    <div class="slide">
+      <img src="images/mverbs5.jpg" alt="Modal Verbs B1 - Slide 5">
+    </div>
+
+    <div class="slide">
+      <img src="images/mverbs6.jpg" alt="Modal Verbs B1 - Slide 6">
+    </div>
+
+    <div class="slide">
+      <img src="images/mverbs7.jpg" alt="Modal Verbs B1- Slide 7">
+    </div>
+
+    <div class="slide">
+      <img src="images/mverbs8.jpg" alt="Modal Verbs B1 - Slide 8">
+    </div>
+
+    <div class="slide">
+      <img src="images/mverbs9.jpg" alt="Modal Verbs B1 - Slide 9">
+    </div>
+
+    <div class="slide">
+      <img src="images/mverbs10.jpg" alt="Modal Verbs B1 - Slide 10">
+    </div>
+
+    <div class="slide">
+      <img src="images/mverbs11.jpg" alt="Modal Verbs B1 - Slide 11">
+    </div>
+
+    <div class="slide">
+      <img src="images/mverbs12.jpg" alt="Modal Verbs B1 - Slide 12">
+    </div>
+
+    <div class="slide">
+      <img src="images/mverbs13.jpg" alt="Modal Verbs B1 - Slide 13">
+    </div>
+
+    <div class="slide">
+      <img src="images/mverbs14.jpg" alt="Modal Verbs B1 - Slide 14">
+      <a href="pre-intermediate.html" class="back-btn">Back</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
