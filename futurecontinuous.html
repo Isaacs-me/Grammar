@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Future Continuous Lesson</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ------------------------
+       FUTURE CONTINUOUS SLIDER
+    ------------------------ */
+    .mv-page {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: #111;
+    }
+
+    .mv-slider {
+      flex: 1;
+      overflow-y: auto;
+      scroll-snap-type: y mandatory;
+      -webkit-overflow-scrolling: touch;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mv-slider .slide {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      scroll-snap-align: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .mv-slider .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    /* BACK BUTTON (last slide only) */
+    .mv-slider .back-btn {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      padding: 5px 12px;
+      font-size: 12px;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .mv-slider .back-btn:hover {
+      background: rgba(0,0,0,0.8);
+    }
+  </style>
+</head>
+
+<body class="mv-page">
+
+  <div class="mv-slider">
+
+    <div class="slide">
+      <img src="images/fcontinuous1.jpg" alt="Future Continuous - Slide 1">
+    </div>
+
+    <div class="slide">
+      <img src="images/fcontinuous2.jpg" alt="Future Continuous - Slide 2">
+    </div>
+
+    <div class="slide">
+      <img src="images/fcontinuous3.jpg" alt="Future Continuous - Slide 3">
+    </div>
+
+    <div class="slide">
+      <img src="images/fcontinuous4.jpg" alt="Future Continuous - Slide 4">
+    </div>
+
+    <div class="slide">
+      <img src="images/fcontinuous5.jpg" alt="Future Continuous - Slide 5">
+    </div>
+
+    <div class="slide">
+      <img src="images/fcontinuous6.jpg" alt="Future Continuous - Slide 6">
+    </div>
+
+    <div class="slide">
+      <img src="images/fcontinuous7.jpg" alt="Future Continuous - Slide 7">
+      <a href="pre-intermediate.html" class="back-btn">Back</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
