@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Present Tenses Lesson</title>
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* ------------------------
+       PRESENT TENSES SLIDER
+    ------------------------ */
+    .ex-page {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      background: #111;
+    }
+
+    .ex-slider {
+      flex: 1;
+      overflow-y: auto;
+      scroll-snap-type: y mandatory;
+      -webkit-overflow-scrolling: touch;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .ex-slider .slide {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      scroll-snap-align: start;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .ex-slider .slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      pointer-events: none;
+    }
+
+    /* BACK BUTTON (last slide only) */
+    .ex-slider .back-btn {
+      position: absolute;
+      bottom: 15px;
+      right: 15px;
+      padding: 5px 12px;
+      font-size: 12px;
+      background: rgba(0,0,0,0.6);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 4px;
+    }
+
+    .ex-slider .back-btn:hover {
+      background: rgba(0,0,0,0.8);
+    }
+  </style>
+</head>
+
+<body class="ex-page">
+
+  <div class="ex-slider">
+
+    <div class="slide">
+      <img src="images/presenttenses1.jpg" alt="Present Tenses  - Slide 1">
+    </div>
+
+    <div class="slide">
+      <img src="images/presenttenses2.jpg" alt="Present Tenses  - Slide 2">
+    </div>
+
+    <div class="slide">
+      <img src="images/presenttenses3.jpg" alt="Present Tenses - Slide 3">
+    </div>
+
+    <div class="slide">
+      <img src="images/presenttenses4.jpg" alt="Present Tenses - Slide 4">
+    </div>
+
+    <div class="slide">
+      <img src="images/presenttenses5.jpg" alt="Present Tenses - Slide 5">
+    </div>
+
+    <div class="slide">
+      <img src="images/presenttenses6.jpg" alt="Present Tenses - Slide 6">
+    </div>
+
+    <div class="slide">
+      <img src="images/presenttenses7.jpg" alt="Present Tenses - Slide 7">
+    </div>
+
+    <div class="slide">
+      <img src="images/presenttenses8.jpg" alt="Present Tenses - Slide 8">
+    </div>
+
+    <div class="slide">
+      <img src="images/presenttenses9.jpg" alt="Present Tenses - Slide 9">
+    </div>
+
+    <div class="slide">
+      <img src="images/presenttenses10.jpg" alt="Present Tenses- Slide 10">
+    </div>
+
+    <div class="slide">
+      <img src="images/presenttenses11.jpg" alt="Present Tenses - Slide 11">
+    </div>
+      <a href="intermediate.html" class="back-btn">Back</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
